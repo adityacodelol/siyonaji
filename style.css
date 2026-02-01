@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #ffb6c1, #ffe4e1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0px 0px 25px rgba(255, 105, 180, 0.4);
+  z-index: 2;
+}
+
+/* Photo */
+.photo {
+  width: 220px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px rgba(255, 20, 147, 0.4);
+  animation: pop 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Heading */
+h1 {
+  font-size: 2rem;
+  color: #ff1493;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn a {
+  text-decoration: none;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+/* Yes Button */
+.btn a:first-child {
+  background: #ff69b4;
+  color: white;
+}
+
+.btn a:first-child:hover {
+  background: #ff1493;
+  transform: scale(1.1);
+}
+
+/* No Button */
+.btn a:last-child {
+  background: #fff;
+  color: #ff1493;
+  border: 2px solid #ff69b4;
+}
+
+.btn a:last-child:hover {
+  background: #ffb6c1;
+  transform: scale(1.1);
+}
+
+/* Floating Hearts */
+.hearts::before,
+.hearts::after {
+  content: "💖 💕 💘 💗 💓";
+  position: absolute;
+  font-size: 2rem;
+  animation: float 6s linear infinite;
+  opacity: 0.6;
+}
+
+.hearts::after {
+  top: 50%;
+  left: 20%;
+  animation-duration: 8s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(-120vh);
+  }
+}
