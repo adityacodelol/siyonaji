@@ -119,3 +119,32 @@ p {
   }
 }
 
+.letter {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #444;
+  box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.3);
+  line-height: 1.6;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #ff69b4;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #ff1493;
+  transform: scale(1.05);
+}
+
+
